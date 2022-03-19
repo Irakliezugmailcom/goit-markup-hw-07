@@ -34,8 +34,10 @@
     color: var(--subid-color);
 }
 
-.socials__link:focus .our-team-svg {
-    fill: var(--title-color);
+.our-team-svg {
+    .socials__link &:focus  {
+        fill: var(--title-color);
+    }
 }
 
 .socials {
@@ -53,22 +55,10 @@
     align-items: center;
     border-radius: 50%;
     transition: fill 250ms var(--cubic), background-color 250ms var(--cubic);
-}
 
-.socials__link:focus .our-team-svg {
-    fill: var(--title-color);
-}
-
-.socials__link:focus {
-    background-color: var(--accent-color);
-}
-
-.socials__link:hover .socials__icon {
-    fill: var(--title-color);
-}
-
-.socials__link:hover {
-    background-color: var(--accent-color);
+    &:focus, :hover {
+        background-color: var(--accent-color);
+    }
 }
 
 .socials__item + .socials__item {
@@ -80,5 +70,9 @@
     height: 20px;
     fill: #AFB1B8;
     transition: fill 250ms --cubic;
+
+    .socials__link &:hover {
+        fill: var(--title-color);
+    }
 }
 
