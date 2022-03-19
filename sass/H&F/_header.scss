@@ -65,21 +65,23 @@
         color: $accent-color;
     }
 
-    .nav_link &--current {
-        position: relative;
+    .nav__link {
+        &--current {
+            position: relative;
+        }
     }
-
-    .nav_link &--current &:after {
-        content: "";
-        position: absolute;
-        bottom: -32px;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background: $accent-color;
-        border-radius: 2px;
+    &--current { 
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -32px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: $accent-color;
+            border-radius: 2px;
+        }
     }
-}
 
 .contacts__item + .contacts__item {
     margin-left: 50px;
