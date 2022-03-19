@@ -64,14 +64,13 @@
     &:focus {
         color: $accent-color;
     }
-
-    .nav__link {
-        &--current {
-            position: relative;
-        }
+    
+    &--current {
+        position: relative;
     }
+    
     &--current { 
-        &:after {
+        &::after {
             content: "";
             position: absolute;
             bottom: -32px;
