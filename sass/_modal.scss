@@ -52,7 +52,7 @@
     pointer-events: none;
 
     .modal__close &:hover {
-        fill: #2196F3;
+        fill: $accent-color;
     }
 }
 
@@ -78,7 +78,7 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $subid-color;
 }
 
 .modal__label4 {
@@ -87,7 +87,7 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $subid-color;
 }
 
 .modal__label5 {
@@ -99,7 +99,7 @@
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $subid-color;
     margin-left: auto;
     margin-right: auto;
 }
@@ -115,7 +115,7 @@
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
-    color: #757575;
+    color: $subid-color;
 }
 
 .modal__span {
@@ -133,25 +133,25 @@
     transform: translate(-50%, -50%);
 
     .modal__span &:hover {
-        fill: #2196F3;
+        fill: $accent-color;
     }
 
     .modal__span &:focus {
-        fill: #2196F3;
+        fill: $accent-color;
     }
 }
 
 .modal__input {
     width: 100%;
     height: 40px;
-    background: #FFFFFF;
+    background: $title-color;
     padding-left: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
 
     &:hover {
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
 }
 
@@ -159,7 +159,7 @@
     display: block;
     width: 100%;
     height: 120px;
-    background: #FFFFFF;
+    background: $title-color;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -182,7 +182,7 @@
 
 .modal__checkbox:checked + .modal__checkbox-svg {
     background-image: url(../images/checked-svgrepo-com.svg);
-    fill: var(--accent-color);
+    fill: $accent-color;
 }
 
 .modal__submit {
@@ -192,8 +192,8 @@
     line-height: calc(30 / 16);
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background: #2196F3;
+    color: $title-color;
+    background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     width: 200px;
