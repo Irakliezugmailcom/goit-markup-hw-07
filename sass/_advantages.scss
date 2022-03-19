@@ -26,7 +26,7 @@
         font-size: 14px;
         line-height: calc(24 / 14);
         letter-spacing: 0.03em;
-        color: #757575;
+        color: $subid-color;
     }
     
     .advantages__div {
@@ -42,5 +42,5 @@
     .advantages__svg {
         height: 70px;
         width: 70px;
-        fill: var(--id-color);
+        fill: $id-color;
     }
