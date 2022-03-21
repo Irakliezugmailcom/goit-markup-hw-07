@@ -1,7 +1,6 @@
 .header {
     position: relative;
     border-bottom: 1px solid #ECECEC;
-
     &__container {
         display: flex;
         align-items: center;
@@ -55,7 +54,7 @@
     list-style-type: none; 
     text-decoration: none;
     cursor: pointer;
-    transition: color 250ms var(--cubic);
+    transition: color 250ms $cubic;
 
     &:hover {
         color: $accent-color;
