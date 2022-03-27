@@ -56,10 +56,7 @@
     cursor: pointer;
     transition: color 250ms $cubic;
 
-    &:hover {
-        color: $accent-color;
-    }
-
+    &:hover,
     &:focus {
         color: $accent-color;
     }
@@ -96,12 +93,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: color 250ms var(--cubic);
+    transition: color 250ms $cubic;
 
-    &:hover {
-        color: $accent-color;
-    }
-
+    &:hover,
     &:focus {
         color: $accent-color;
     }
@@ -111,7 +105,8 @@
     margin-right: 10px;
     fill: $subid-color;
 
-    .header__link &:focus {
+    .header__link 
+    &:focus {
         fill: $accent-color;
     }
 }

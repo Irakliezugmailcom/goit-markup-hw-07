@@ -99,7 +99,7 @@
     align-items: center;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: fill 250ms $cubic background-color 250ms $cubic;
+    transition: fill 250ms $cubic, background-color 250ms $cubic;
 
     &:focus,
     &:hover {
@@ -112,7 +112,8 @@
     height: 20px;
     fill: $title-color;
 
-    .footer__socialsLink &:focus {
+    .footer__socialsLink 
+    &:focus {
         stroke: $accent-color;
     }
 
